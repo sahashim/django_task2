@@ -1,0 +1,15 @@
+{% extends 'base.html' %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+{% for i in categories %}
+    <a href="{% url 'posts' i.slug %}" class="circle-link">{{ i.title }}</a>
+{% endfor %}
+
+</body>
+</html>
